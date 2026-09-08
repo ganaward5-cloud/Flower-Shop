@@ -1,0 +1,14 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Caprasimo&display=swap');
+
+@import "tailwindcss";
+
+@theme{
+  --font-caprasimo: "Caprasimo", cursive;
+  
+  --color-primary-yellow: #FFC800;
+  --color-primary-black: #000000;
+  --color-primary-green: #496D4A;
+}
+
+
