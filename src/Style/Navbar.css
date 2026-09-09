@@ -1,0 +1,17 @@
+@import './App.css';
+
+.navbar-container {
+    @apply flex items-center justify-between px-45 py-6  shadow-lg;
+}
+
+.navbar-logo {
+    @apply font-caprasimo text-4xl;
+}
+
+.navbar-links {
+    @apply  font-caprasimo flex gap-8 text-sm uppercase tracking-wider;
+}
+
+.navbar-link {
+    @apply hover:text-primary-yellow transition-colors duration-300;
+}

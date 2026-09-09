@@ -1,0 +1,71 @@
+@import './App.css';
+
+.footer {
+  @apply relative mx-auto my-6 w-[96%] h-[400px]
+         overflow-hidden rounded-[28px]
+         text-white;
+}
+
+/* صورة الخلفية */
+.footer-bg {
+  @apply absolute inset-0
+         bg-cover bg-center bg-no-repeat
+         scale-105
+         transition-transform duration-700;
+}
+
+.footer:hover .footer-bg {
+  @apply scale-110;
+}
+
+/* Overlay */
+.footer-overlay {
+  @apply absolute inset-0 bg-black/45;
+}
+
+/* المحتوى */
+.footer-content {
+  @apply relative z-10 h-full
+         flex flex-col items-center justify-center;
+}
+
+/* اللوجو في المنتصف */
+.footer-logo {
+  @apply text-7xl font-bold
+         tracking-wide
+         text-white
+         drop-shadow-lg
+         font-caprasimo
+         mb-16;
+}
+
+/* الصف السفلي اللي فيه الهاتف والإيميل */
+.footer-bottom {
+  @apply absolute bottom-8 left-0 right-0
+         flex justify-between items-center
+         px-10;
+}
+
+/* كل عنصر (هاتف أو إيميل) */
+.footer-item {
+  @apply flex items-center gap-6
+         text-white
+         transition-all duration-300
+         hover:scale-105;
+}
+
+.footer-icon {
+  @apply text-3xl;
+}
+
+.footer-item h4 {
+  @apply font-caprasimo
+    leading-tight
+    text-2xl;
+}
+
+.footer-item p {
+  @apply text-2xl 
+  opacity-90
+  font-caprasimo;
+}
