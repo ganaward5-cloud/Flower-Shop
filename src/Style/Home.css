@@ -1,0 +1,43 @@
+@import './App.css';
+.home-sec {
+    @apply max-w-md mx-auto;
+}
+
+.home-sec > div {
+    @apply text-center py-8 border-t border-gray-300;
+}
+
+.home-sec h2 {
+    @apply text-sm font-bold mb-4;
+}
+
+.home-sec img {
+    @apply w-16 h-16 object-cover rounded-lg mx-auto mb-4;
+}
+
+.home-sec p:first-of-type {
+    @apply font-bold uppercase text-sm tracking-wide mb-2;
+}
+
+.home-sec p:last-of-type {
+    @apply text-xs text-gray-500 px-6;
+}
+
+/* القسم الأخير (الصورة الكبيرة + النص + الزرار) */
+.home-end {
+    @apply border-t border-gray-300 pt-0;
+}
+
+.home-end img {
+    @apply w-full h-64 object-cover rounded-lg mb-6 !important;
+}
+
+.home-end p {
+    @apply text-center font-bold text-base px-8 mb-4 !important;
+}
+
+.home-end a {
+    @apply block w-fit mx-auto bg-primary-yellow text-primary-black 
+           text-xs uppercase tracking-wide px-4 py-2 rounded-full
+           hover:opacity-80 transition-opacity duration-300;
+}
