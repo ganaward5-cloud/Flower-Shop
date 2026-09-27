@@ -1,0 +1,66 @@
+@import './App.css';
+
+.about_page {
+  @apply max-w-xl mx-auto px-6 py-12;
+}
+ 
+/* صف العنوان: ABOUT على الشمال + اسم/دور لِلي على اليمين */
+.about_top {
+  @apply flex justify-between items-start mb-6;
+}
+ 
+.header {
+  @apply text-2xl font-bold tracking-tight text-neutral-900 uppercase;
+}
+ 
+.about_credit {
+  @apply text-right;
+}
+ 
+.about_credit_name {
+  @apply text-xs font-semibold tracking-wide text-neutral-900;
+}
+ 
+.about_credit_role {
+  @apply text-[10px] text-neutral-400;
+}
+ 
+/* الصورة الكبيرة أول الصفحة + الفقرة الغامقة تحتها */
+.about_intro {
+  @apply flex flex-col mb-10;
+}
+ 
+.about_img_intro {
+  @apply w-full h-72 object-cover rounded-lg bg-neutral-200 mb-6;
+}
+ 
+.about_p {
+  @apply text-lg font-bold leading-snug text-neutral-900;
+}
+ 
+/* صف الصور الثلاثة الصغيرة */
+.about_gallery {
+  @apply grid grid-cols-3 gap-3 mb-10;
+}
+ 
+.about_img {
+  @apply w-full h-24 object-cover rounded-md bg-neutral-200;
+}
+ 
+/* الفقرات + الصورة الكبيرة النص */
+.about_content {
+  @apply flex flex-col;
+}
+ 
+.about_text {
+  @apply text-sm leading-relaxed text-neutral-500 mb-8;
+}
+ 
+.about_feature_img_wrap {
+  @apply bg-rose-50 rounded-lg p-8 mb-8;
+}
+ 
+.about_feature_img {
+  @apply w-full h-56 object-cover rounded-md;
+}
+ 
